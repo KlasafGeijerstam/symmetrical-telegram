@@ -1,0 +1,12 @@
+#!/usr/bin/fish
+for func in (ls)
+    if [ -d $func ]
+	cp ../whisker.py $func/
+	cd $func
+	set -l name (basename (pwd))
+	zip $name".zip" *.py > /dev/null
+	wsk action update $name --kind python:3 $name".zip"
+	rm whisker.py $name".zip"
+	cd ../
+    end
+end

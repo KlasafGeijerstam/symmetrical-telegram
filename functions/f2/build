@@ -1,4 +1,0 @@
-#!/bin/bash
-cp ../../whisker.py .
-zip $(basename $(pwd))".zip" *.py
-rm whisker.py

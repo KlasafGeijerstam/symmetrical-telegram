@@ -1,0 +1,15 @@
+#!/usr/bin/fish
+mkdir tmp
+cp run_application.py tmp/__main__.py
+cp whisker.py tmp/
+cd tmp
+zip run_application.zip *.py > /dev/null
+mv run_application.zip ../
+cd ../
+rm -rf tmp
+
+wsk action update run_application --kind python:3 run_application.zip
+rm run_application.zip
+
+cd functions
+./build_and_update
