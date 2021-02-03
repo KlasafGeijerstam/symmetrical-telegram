@@ -1,0 +1,148 @@
+{
+    "credentials": "23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP",
+    "actions": {
+        "entry_point": {
+            "actions": [
+                {
+                    "action_name": "f1",
+                    "probability": 1
+                }
+            ]
+        },
+        "f1": {
+            "actions": [
+                {
+                    "action_name": "f2",
+                    "probability": 1
+                },
+                {
+                    "action_name": "f3",
+                    "probability": 1
+                }
+            ] 
+        },
+        "f2": {
+            "actions": [
+                {
+                    "action_name": "f4",
+                    "probability": 0.6
+                },
+                {
+                    "action_name": "f5",
+                    "probability": 0.4
+                }
+            ] 
+        },
+        "f4": {
+            "actions": [
+                {
+                    "action_name": "f7",
+                    "probability": 1
+                }
+            ] 
+        },
+        "f5": {
+            "actions": [
+                {
+                    "action_name": "f11",
+                    "probability": 1
+                },
+                {
+                    "action_name": "f12",
+                    "probability": 1
+                }
+            ] 
+        },
+        "f11": {
+            "actions": [
+                {
+                    "action_name": "f7",
+                    "probability": 1
+                }
+            ] 
+        },
+        "f12": {
+            "actions": [
+                {
+                    "action_name": "f13",
+                    "probability": 1
+                }
+            ] 
+        },
+        "f13": {
+            "actions": [
+                {
+                    "action_name": "f14",
+                    "probability": 1
+                }
+            ] 
+        },
+        "f14": {
+            "actions": [
+                {
+                    "action_name": "f13",
+                    "probability": 0.3
+                },
+                {
+                    "action_name": "f7",
+                    "probability": 0.7
+                }
+            ] 
+        },
+        "f3": {
+            "actions": [
+                {
+                    "action_name": "f10",
+                    "probability": 0.2
+                },
+                {
+                    "action_name": "f9",
+                    "probability": 0.8
+                }
+            ] 
+        },
+        "f10": {
+            "actions": [
+                {
+                    "action_name": "f6",
+                    "probability": 1
+                }
+            ] 
+        },
+        "f9": {
+            "actions": [
+                {
+                    "action_name": "f6",
+                    "probability": 1
+                }
+            ] 
+        },
+        "f6": {
+            "actions": [
+                {
+                    "action_name": "f3",
+                    "probability": 0.1
+                },
+                {
+                    "action_name": "f7",
+                    "probability": 0.9
+                }
+            ] 
+        },
+        "f7": {
+            "actions": [
+                {
+                    "action_name": "f7",
+                    "probability": 0.2
+                },
+                {
+                    "action_name": "f8",
+                    "probability": 0.8
+                }
+            ] 
+        },
+        "f8": {
+            "actions": [] 
+        }
+    }
+}
