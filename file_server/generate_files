@@ -1,0 +1,10 @@
+#!/usr/bin/fish
+
+if [ ! -d static ]
+	mkdir static
+end
+cd static
+set files 10MB 20MB 25MB
+for f in $files
+	head -c $f /dev/urandom > $f
+end

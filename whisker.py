@@ -3,6 +3,8 @@ import random
 import requests
 import os
 
+DOWNLOAD_PATH = "http://172.17.0.1:5000/static"
+UPLOAD_PATH = "http://172.17.0.1:5000/upload"
 
 class Whisker:
 
