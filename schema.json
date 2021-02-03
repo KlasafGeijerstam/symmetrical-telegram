@@ -1,0 +1,44 @@
+{
+    "actions": {
+        "entry_point": {
+            "actions": [
+                {
+                    "action_name": "f1",
+                    "probability" :1,
+                    "arguments": {
+
+                    }
+                }
+            ]
+        },
+        "f1": {
+            "actions": [
+                {
+                    "action_name": "f1",
+                    "probability" :0.4,
+                    "arguments": {
+
+                    }
+                },
+                {
+                    "action_name": "f2",
+                    "probability" :0.5,
+                    "arguments": {
+                        "hej": "svejs"
+                    }
+                }
+            ] 
+        },
+        "f2": {
+            "actions": [
+                {
+                    "action_name": "f1",
+                    "probability" :0.4,
+                    "arguments": {
+
+                    }
+                }
+            ]
+        }
+    }
+}
