@@ -5,6 +5,7 @@ import os
 
 DOWNLOAD_PATH = "http://172.17.0.1:5000/static"
 UPLOAD_PATH = "http://172.17.0.1:5000/upload"
+LOGGER_PATH = "http://172.17.0.1:8000/calls"
 
 class Whisker:
 
@@ -29,7 +30,16 @@ class Whisker:
         if 'arguments' in action:
             data['arguments'] = action['arguments']
 
+        # post to logging service
+        # calls/<application_id>/<caller>/<calling>
+        host = f'{LOGGER_PATH}/{self.config["application_id"]}/{self.name}/{action["action_name"]}'
+        resp = requests.post(host)
+
+        print(resp)
+
+
         host = f'{self.api_host}/api/v1/namespaces/{self.namespace}/actions/{action["action_name"]}'
+        # post to OW
         resp = requests.post(host, json=data,
                              auth=(self.username, self.password), verify=False)
 

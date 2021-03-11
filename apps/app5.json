@@ -1,7 +1,10 @@
 {
     "credentials": "23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP",
+    "application_id": 5,
+
     "actions": {
         "entry_point": {
+            "memory": 256,
             "actions": [
                 {
                     "action_name": "f1",
@@ -10,6 +13,7 @@
             ]
         },
         "f1": {
+            "memory": 256,
             "actions": [
                 {
                     "action_name": "f3",
@@ -22,6 +26,7 @@
             ] 
         },
         "f2": {
+            "memory": 256,
             "actions": [
                 {
                     "action_name": "f4",
@@ -30,6 +35,7 @@
             ] 
         },
         "f3": {
+            "memory": 256,
             "actions": [
                 {
                     "action_name": "f4",
@@ -38,6 +44,7 @@
             ] 
         },
         "f4": {
+            "memory": 256,
             "actions": [
                 {
                     "action_name": "f1",
@@ -54,6 +61,7 @@
             ] 
         },
         "f6": {
+            "memory": 256,
             "actions": [] 
         }
     }
