@@ -22,8 +22,23 @@ class Whisker:
         self.username, self.password = config['credentials'].split(':')
 
     def run_next(self):
-        return [self.run(action) for action in self.actions
-                if random.random() < action['probability']]
+        actions = []
+
+        branches = []
+        probabilities = []
+
+        for action in self.actions:
+            if action['probability'] == 1.0:
+                actions.append(self.run(action))
+            else:
+                branches.append(action)
+                probabilities.append(action['probability'])
+        
+        if branches:
+            branch = random.choices(branches, probabilities)
+            actions.append(self.run(branch))
+
+        return actions
 
     def run(self, action):
         data = self.config.copy()
