@@ -22,6 +22,7 @@ class Whisker:
         self.username, self.password = config['credentials'].split(':')
 
     def run_next(self):
+        print('Running next')
         actions = []
 
         branches = []
@@ -30,13 +31,21 @@ class Whisker:
         for action in self.actions:
             if action['probability'] == 1.0:
                 actions.append(self.run(action))
+                print('Found parallel')
             else:
+                print('Found branch')
                 branches.append(action)
                 probabilities.append(action['probability'])
         
         if branches:
-            branch = random.choices(branches, probabilities)
-            actions.append(self.run(branch))
+            print('Selecting branch')
+            try:
+                branch = random.choices(branches, probabilities)[0]
+                print('Selected branch: ', branch)
+                actions.append(self.run(branch))
+                print('Got here!')
+            except Exception as e:
+                print('ERROR', e)
 
         return actions
 

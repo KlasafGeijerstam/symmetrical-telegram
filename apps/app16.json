@@ -1,6 +1,6 @@
 {
+    "application_id": "app16",
     "credentials": "23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP",
-    "application_id": 16,
     "actions": {
         "entry_point": {
             "memory": 256,
@@ -173,6 +173,5 @@
             "memory": 256,
             "actions": [] 
         }
-    },
-    "application_id": "app16"
+    }
 }
