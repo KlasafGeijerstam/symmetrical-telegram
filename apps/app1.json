@@ -18,8 +18,16 @@
                 {
                     "action_name": "f2",
                     "probability": 0.1
+                },
+                {
+                    "action_name": "end_point",
+                    "probability": 0.9
                 }
             ] 
+        },
+        "end_point": {
+            "memory": 256,
+            "actions": []
         }
     }
 }

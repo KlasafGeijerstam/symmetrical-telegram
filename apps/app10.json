@@ -104,8 +104,18 @@
         },
         "f8": {
             "memory": 256,
-            "actions": [] 
+            "actions": [
+                {
+                    "action_name": "end_point",
+                    "probability": 1
+                }
+            ] 
+        },
+        "end_point": {
+            "memory": 256,
+            "actions": []
         }
+
     },
     "application_id": "app10"
 }
